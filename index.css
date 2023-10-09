@@ -1,26 +1,120 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+
 html,
 body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 body {
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.container {
     display: flex;
-    height: 100vh;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 800px;
+    height: 550px;
+    margin: 0 auto;
 }
 
-.material-symbols-outlined {
-    font-size: 50px;
-    color: darkgrey;
+.mainBlock {
+    width: 800px;
+    height: 500px;
+    background-color: red;
+    margin: 0 auto;
+    border: 20px solid;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 50px;
+
+    padding-bottom: 30px;
 }
 
-.material-symbols-outlined:hover,
-.material-icons-outline:focus {
-    cursor: pointer;
+
+
+/* MAIN STYLES
+#box {
+    width: 280px;
+    background: #f1f1f1;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 4px 4px 7px #0008;
+    position: absolute;
+    left: 150px;
+    top: 150px;
 }
 
-.material-icons-outline:active {
-    transform: scale(0.96);
+#boxHead {
+    padding: 24px;
+    background: #f60;
+    cursor: move;
+    border-bottom: 2px solid #fff;
 }
+
+#boxBody {
+    padding: 7px;
+    background: #fbfbff;
+    font: 500 17px sans-serif;
+    line-height: 1.4l
+}
+
+mark {
+    display: inline-block;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: azure;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-height: 2rem;
+    width: 15rem;
+    padding: 10px;
+    background-color: rgb(218, 255, 194);
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    cursor: move;
+    user-select: none;
+}
+
+.container header {
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+
+.draggable-container {
+    margin: 10px 0;
+}
+
+/* DRAGGABLE STYLES*/
+
+
+
+.item1 {}
