@@ -34,21 +34,32 @@ body {
 }
 
 /* Styles for the main content block */
-.mainBlock {
+.outerBlock {
     width: 700px;
     height: 500px;
     background-color: red;
     margin: 0 auto;
     border: 20px solid;
-    text-align: center;
     padding-top: 60px;
     padding-left: 30px;
     border-radius: 50px;
     padding-bottom: 30px;
 }
 
+.innerBlock {
+    width: 620px;
+    height: 380px;
+    margin: 0 auto;
 
-/* Styles for the draggable element */
+    background-color: #ffffff;
+    text-align: center;
+
+
+
+}
+
+
+/* Styles for the draggable element 
 #mydiv {
     position: absolute;
     background-color: #f1f1f1;
@@ -76,7 +87,7 @@ body {
 #draggableA {
     position: absolute;
 
-    bottom: 100px;
+    top: 400px;
     padding: 10px;
     cursor: move;
 }
@@ -84,7 +95,7 @@ body {
 #draggableB {
     position: absolute;
 
-    bottom: 100px;
+    top: 200px;
     padding: 10px;
     cursor: move;
 }
@@ -92,7 +103,7 @@ body {
 #draggableC {
     position: absolute;
 
-    top: 300px;
+    top: 30px;
     padding: 10px;
     cursor: move;
 }
