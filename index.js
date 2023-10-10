@@ -1,48 +1,52 @@
-const container = document.querySelector(".container");
-
-let isDragging = false; // Flag to track whether dragging is in progress
-
-// Variables to store initial mouse position and container's initial position
-let initialMouseX, initialMouseY, initialContainerX, initialContainerY;
-
-function onMouseDown(event) {
-  isDragging = true;
-
-  // Get initial mouse position and container's initial position
-  initialMouseX = event.clientX;
-  initialMouseY = event.clientY;
-
-  let containerStyle = window.getComputedStyle(container);
-  initialContainerX = parseInt(containerStyle.left);
-  initialContainerY = parseInt(containerStyle.top);
-
-  // Prevent default browser drag behavior
-  event.preventDefault();
-
-  // Add mousemove and mouseup event listeners for dragging
-  document.addEventListener("mousemove", onMouseDrag);
-  document.addEventListener("mouseup", onMouseUp);
-}
-
-function onMouseDrag(event) {
-  if (!isDragging) return;
-
-  // Calculate the distance the mouse has moved since the last event
-  const deltaX = event.clientX - initialMouseX;
-  const deltaY = event.clientY - initialMouseY;
-
-  // Update the container's position based on the mouse movement
-  container.style.left = `${initialContainerX + deltaX}px`;
-  container.style.top = `${initialContainerY + deltaY}px`;
-}
-
-function onMouseUp() {
-  isDragging = false;
-
-  // Remove mousemove and mouseup event listeners
-  document.removeEventListener("mousemove", onMouseDrag);
-  document.removeEventListener("mouseup", onMouseUp);
-}
-
-// Add mousedown event listener to start dragging
-container.addEventListener("mousedown", onMouseDown);
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize an array to hold draggable elements
+    var draggableElements = [];
+  
+    // Make the DIV elements draggable:
+    var divElements = document.querySelectorAll(".draggable");
+    divElements.forEach(function (element) {
+      dragElement(element);
+    });
+  
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        // If present, the header is where you move the DIV from:
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        // Otherwise, move the DIV from anywhere inside the DIV:
+        elmnt.onmousedown = dragMouseDown;
+      }
+  
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+  
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+  
+      function closeDragElement() {
+        // stop moving when the mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+  });
+  
