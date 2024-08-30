@@ -1,8 +1,10 @@
-.clickable {
-    size: 50%;
-
+p {
+    color: rgb(107, 182, 37);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.a {
-    color: blue;
+.continuebox {
+    width: 15em;
+    border: 2px;
+
 }
