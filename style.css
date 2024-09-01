@@ -31,11 +31,13 @@ img {
     grid-template-rows: repeat(5, 1fr);
     grid-column: 1;
     grid-row: 5;
+
 }
 
 .innerbox1 {
     width: 4em;
     height: 4em;
+    border-radius: 100%;
     border: 1px solid #333;
     padding: 2px;
     grid-column: 1;
@@ -45,20 +47,11 @@ img {
 .innerbox2 {
     width: 4em;
     height: 4em;
+    border-radius: 100%;
     border: 1px solid #333;
     padding: 2px;
     grid-column: 1;
     grid-row: 4;
-}
-
-.innerbox3 {
-    width: 4em;
-    height: 4em;
-
-    border: 1px solid #333;
-    padding: 2px;
-    grid-column: 1;
-    grid-row: 6;
 }
 
 .continuebox {
