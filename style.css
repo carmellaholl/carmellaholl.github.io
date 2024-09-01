@@ -1,6 +1,11 @@
 p {
-    color: rgb(107, 182, 37);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .mainwrapper {
@@ -11,11 +16,11 @@ p {
 }
 
 .userbox {
-    width: 12em;
+    width: 14em;
     border: 1px solid #333;
     padding: 2px;
     grid-column: 3/4;
-    grid-row: 4;
+    grid-row: 3;
 }
 
 .bottombox {
@@ -23,7 +28,7 @@ p {
     row-gap: 10px;
     grid-template-rows: repeat(5, 1fr);
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 5;
 }
 
 .innerbox1 {
@@ -55,10 +60,11 @@ p {
 }
 
 .continuebox {
-    width: auto;
+    width: 13em;
     height: min-content;
     border: 1px solid #333;
     padding: 9px;
     grid-column: 3/4;
-    grid-row: 5;
+    grid-row: 4;
+    position: inherit;
 }
