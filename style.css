@@ -10,17 +10,19 @@ img {
 
 .mainwrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 100px;
-    row-gap: 10px;
+    row-gap: 15px;
 }
 
 .userbox {
-    width: 14em;
+    width: 10em;
     border: 1px solid #333;
-    padding: 2px;
-    grid-column: 3/4;
-    grid-row: 3;
+    border-radius: 100%;
+    height: 10em;
+    padding: 25px;
+    grid-column: 4/5;
+    grid-row: 2;
 }
 
 .bottombox {
@@ -60,11 +62,11 @@ img {
 }
 
 .continuebox {
-    width: 13em;
+    width: 12em;
     height: min-content;
     border: 1px solid #333;
     padding: 9px;
-    grid-column: 3/4;
+    grid-column: 4/5;
     grid-row: 4;
     position: inherit;
 }
