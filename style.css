@@ -9,6 +9,9 @@ img {
     height: 100%;
 }
 
+.landerbackground {}
+
+
 .mainwrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -17,6 +20,7 @@ img {
 }
 
 .userbox {
+    background-color: white;
     width: 10em;
     border: 1px solid #333;
     border-radius: 100%;
@@ -27,6 +31,7 @@ img {
 }
 
 .continuebox {
+    background-color: white;
     width: 12em;
     height: min-content;
     border: 1px solid #333;
@@ -46,6 +51,8 @@ img {
 }
 
 .innerbox1 {
+    background-color: white;
+
     width: 4em;
     height: 4em;
     border-radius: 100%;
@@ -56,6 +63,8 @@ img {
 }
 
 .innerbox2 {
+    background-color: white;
+
     width: 4em;
     height: 4em;
     border-radius: 100%;
