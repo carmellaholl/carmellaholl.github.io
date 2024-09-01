@@ -9,9 +9,6 @@ img {
     height: 100%;
 }
 
-.landerbackground {}
-
-
 .mainwrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -22,7 +19,7 @@ img {
 .userbox {
     background-color: white;
     width: 10em;
-    border: 1px solid #333;
+    border: 0px solid #333;
     border-radius: 100%;
     height: 10em;
     padding: 25px;
