@@ -35,7 +35,7 @@ img {
     width: 12em;
     height: min-content;
     border: 1px solid #333;
-    padding: 9px;
+    padding: 10px;
     grid-column: 4/5;
     grid-row: 5;
     position: inherit;
@@ -64,7 +64,6 @@ img {
 
 .innerbox2 {
     background-color: white;
-
     width: 4em;
     height: 4em;
     border-radius: 100%;
