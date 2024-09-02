@@ -44,16 +44,19 @@ img {
     grid-template-rows: repeat(5, 1fr);
     grid-column: 1;
     grid-row: 6;
+}
 
+span:hover {
+    background-color: rgb(255, 255, 0);
+    padding: 4px;
 }
 
 .innerbox1 {
     background-color: white;
-
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    border: 1px solid #333;
+    border: 0px solid #333;
     padding: 2px;
     grid-column: 1;
     grid-row: 2;
@@ -64,7 +67,7 @@ img {
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    border: 1px solid #333;
+    border: 0px solid #333;
     padding: 2px;
     grid-column: 1;
     grid-row: 4;
