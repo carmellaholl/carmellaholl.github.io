@@ -26,7 +26,7 @@ img {
 }
 
 .userbox {
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.4);
     width: 10em;
     border: 0px solid #333;
     border-radius: 100%;
@@ -43,7 +43,7 @@ img {
     background: rgba(3, 28, 4, 0.2);
     width: 17em;
     height: min-content;
-    border: 1px solid rgb(255, 255, 255, 0.2);
+    border: 2px solid rgb(255, 255, 255, 0.2);
     text-align: center;
     padding: 10px;
     grid-column: 4/5;
@@ -56,10 +56,12 @@ img {
     grid-template-rows: repeat(6, 1fr);
     grid-column: 1;
     grid-row: 6;
+    padding-left: 39px;
 }
 
 span:hover {
     background-color: rgb(255, 255, 255, 0.2);
+    padding-left: 20px;
     padding-bottom: 20px;
 
 }
@@ -69,7 +71,6 @@ span:hover {
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    border: 0px solid #333;
     grid-column: 1;
     grid-row: 4;
 }
