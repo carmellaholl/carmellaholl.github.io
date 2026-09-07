@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/art-project/style.css" />
   </head>
   <body>
-      <ul>
-        <li><a href="/art-project/index.html">Art Project</a></li>
-      </ul>
-    <script src="script.js"></script>
+    <div id="container">
+    <h1> Find a random piece of art and explore its artist! </h1>
+    <h1>What era would you like to explore art from?</h1>
+    <input type="text" id="beginning-year-input" class="input-field" > 
+    <input type="text" id="end-year-input" class="input-field" > 
+
+    <button id="fetchBtn">Enter</button>
+    <div class="result-container" id="result">
+        <h3 id="header"> </h3>
+        <p id="answer-text"></p>
+    </div>
+   </div>
+    <script src="/art-project/script.js"></script>
+    
   </body>
 </html>
