@@ -1,0 +1,82 @@
+p {
+  color: brown;
+}
+
+body {
+  background-image: url(pexels-hanife-altan-45420650-7643400.jpg);
+  background-size: 100%;
+}
+
+.container-box {
+  /* Sets how response box is displayed */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.response-box {
+  border: 2px brown solid;
+  border-radius: 13px;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px brown(0 0 0 / 20%);
+
+  /* Sets display for objects inside of response-box */
+  display: grid;
+  grid-template-rows: 80px 100px 230px 230px;
+  grid-template-columns: 338px 338px;
+  overflow: hidden;
+  gap: 1.5rem;
+}
+
+.header {
+  grid-column: 1 / 3;
+  grid-row: 1;
+
+  text-align: center;
+  color: brown;
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px brown solid;
+    border-radius: 20px;
+    margin: auto;
+  width: 250px;
+  height: 50%;
+  visibility: visible;
+}
+
+.quiz-option-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border-radius: 20px;
+    margin: auto;
+  width: 250px;
+  height: 50%;
+  height: auto;
+
+  background-color: aqua;
+}
+
+.fetch {
+    border-radius: 20px;
+    margin: auto;
+  width: 250px;
+  height: 50%;
+  grid-column: 1 / 3;
+
+  grid-row: 2;
+}
+
+/* .result-container{
+      grid-row: 3 / 4;
+      visibility: hidden;
+}
+ */
