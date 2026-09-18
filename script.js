@@ -39,9 +39,11 @@ skills.addEventListener("click", () => {
       if (skillsPara.parentElement === skills) {
         skills.removeChild(skillsPara);
       }
-    }, 100);
+    }, 70);
   }
 });
+
+
 
 const link = document.createElement("a");
  link.setAttribute("href", "https://www.linkedin.com/in/carmellaholloway/");
@@ -57,7 +59,7 @@ const isOpen = linkedin.classList.toggle("linkedin-open");
       if (link.parentElement === linkedin) {
         linkedin.removeChild(link);
       }
-    }, 100);
+    }, 70);
   }
 
 });
@@ -76,6 +78,6 @@ objective.addEventListener("click", () => {
       if (objecPara.parentElement === objective) {
         objective.removeChild(objecPara);
       }
-    }, 100);
+    }, 70);
   }
 });
