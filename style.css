@@ -31,7 +31,7 @@ body {
   background: rgb(241, 213, 146);
   transform-origin: bottom center;
   cursor: pointer;
-  transform: rotateX(-35deg) skew(1deg);
+  transform: rotateX(-40deg) skew(1deg);
 
   width: 800px;
   height: 500px;
@@ -74,7 +74,7 @@ body {
 .linkedin {
   border: 2px solid rgb(10, 102, 194);
   background-color: rgb(10, 102, 194);
-  margin-top: 25px;
+  top:24px;
   border-radius: 12px;
   width: 85%;
   height: 50%;
@@ -90,6 +90,12 @@ body {
   font-weight: 400;
   font-size: large;
 }
+
+/* .linkedin,
+.github,
+.about {
+  margin-top: 30px; /* replace with your desired base + 30px per element */
+ 
 
 .linkedin::before {
   text-align: center;
@@ -114,12 +120,16 @@ body {
   position: absolute;
   transition: all 0.2s ease-out;
   /* Text */
+   padding-top: 30px;
   text-align: center;
-  text-decoration: underline;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: large;
 }
 
 a{
-    text-decoration: none;
+    color:inherit;
 }
 
 
@@ -129,7 +139,7 @@ a{
   margin: 0 auto;
   display: block;
   justify-self: center;
-  margin-top: 30px;
+  margin-top: 58px;
   border-radius: 12px;
   width: 90%;
   height: 50%;
@@ -159,7 +169,6 @@ a{
  
 } 
  
-
 .github-open {
   justify-self: center;
   border-radius: 12px;
@@ -186,7 +195,7 @@ a{
   margin: 0 auto;
   display: block;
   justify-self: center;
-  margin-top: 60px;
+  margin-top: 90px;
   border-radius: 12px;
   width: 95%;
   height: 50%;
