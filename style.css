@@ -84,7 +84,6 @@ body {
   justify-self: center;
   transition: all 0.1s ease-in;
    /* Text */
-  content: "Linkedin";
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
@@ -102,7 +101,7 @@ body {
   background: rgb(10, 102, 194);
   border-radius: 25px 0 0 0;
   clip-path: path("M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z");
-  content: "Linkedin";
+  content: "Connect";
 }
 
 .linkedin-open {
@@ -146,6 +145,7 @@ a{
 
 .github::before {
   text-align: center;
+  
   position: absolute;
   top: -18px;
   left: 0px;
@@ -155,7 +155,7 @@ a{
   border-radius: 25px 0 0 0;
   clip-path: path("M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z");
   /* Text */
-  content: "Github";
+  content: "Skills";
  
 } 
  
@@ -168,7 +168,15 @@ a{
   transform: translateY(-75px);
   position: absolute;
   transition: all 0.2s ease-out;
-    text-align: center;
+  grid: flex;
+  
+   /* Text */
+   padding-top: 30px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: large;
 
 }
 
@@ -185,7 +193,6 @@ a{
   position: absolute;
   transition: all 0.1s ease-in;
     /* Text */
-  content: "Linkedin";
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
@@ -204,7 +211,7 @@ a{
   border-radius: 25px 0 0 0;
   clip-path: path("M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z");
   /* Text */
-  content: "About Me";
+  content: "Objective";
 
 }
 
@@ -216,8 +223,13 @@ a{
   transform: translateY(-75px);
   position: absolute;
   transition: all 0.2s ease-out;
-    text-align: center;
-
+ /* Text */
+   padding-top: 30px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: large;
 }
 
 .name {

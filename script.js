@@ -1,28 +1,42 @@
 const folder = document.querySelector(".folder");
-const github = document.querySelector(".github");
+const skills = document.querySelector(".github");
 const linkedin = document.querySelector(".linkedin");
-const about = document.querySelector(".about");
-let isToggled = false;
+const objective = document.querySelector(".about");
 folder.addEventListener("click", () => {
-    folder.classList.toggle("folder-open");
-    if(!folder.classList.contains("folder-open")){
-            github.classList.remove("github-open");
+  folder.classList.toggle("folder-open");
+  if (!folder.classList.contains("folder-open")) {
+    skills.classList.remove("github-open");
     linkedin.classList.remove("linkedin-open");
-    about.classList.remove("about-open");
-    }
-})
+    objective.classList.remove("about-open");
+  }
+});
 
+const skillsPara = document.createElement("p");
 
-github.addEventListener("click", () => {
-    github.classList.toggle("github-open");
-})
-
+skills.addEventListener("click", () => {
+  skills.classList.toggle("github-open");
+  skillsPara.textContent = "Java | HTML / CSS | Javascript | C";
+  if (skillsPara.parentElement == skills) {
+    console.log(skills.childNodes);
+    skills.removeChild(skillsPara);
+    return;
+  }
+  skills.appendChild(skillsPara);
+});
 
 linkedin.addEventListener("click", () => {
-    linkedin.classList.toggle("linkedin-open");
-})
+  linkedin.classList.toggle("linkedin-open");
+});
 
+const objecPara = document.createElement("p");
 
-about.addEventListener("click", () => {
-    about.classList.toggle("about-open");
-})
+objective.addEventListener("click", () => {
+  objective.classList.toggle("about-open");
+  objecPara.textContent = "Develop products with a positive impact";
+  if (objecPara.parentElement == objective) {
+    console.log(objective.childNodes);
+    objective.removeChild(objecPara);
+    return;
+  }
+  objective.appendChild(objecPara);
+});
