@@ -9,6 +9,13 @@ folder.addEventListener("click", () => {
     skills.classList.remove("github-open");
     linkedin.classList.remove("linkedin-open");
     objective.classList.remove("about-open");
+
+    const sp = skills.querySelector("p");
+    const lk = linkedin.querySelector("a");
+    const op = objective.querySelector("p");
+    if (sp) skills.removeChild(sp);
+    if (lk) linkedin.removeChild(lk);
+    if (op) objective.removeChild(op);
   }
 });
 

@@ -13,15 +13,14 @@ body {
 .folder {
   width: 800px;
   height: 510px;
-  /* margin: 5em auto 2em; */
-
   border-radius: 25px 25px 25px 25px;
   filter: drop-shadow(0 0 0.75rem grey);
   cursor: pointer;
-  display: flex;
   align-items: center;
-  justify-content: center;
-
+  display: grid;
+  /* align-items: center;
+  justify-content: center; */
+  text-align: center;
   background: rgb(241, 213, 146);
   position: absolute;
   transition: all 0.2s ease-in;
@@ -38,22 +37,9 @@ body {
   perspective: 850px;
 }
 
-/* .folder-open .linkedin {
-  transform: translate(-50%, 0%);
-}
-
-.folder-open .github {
-  transform: translate(-50%, 0%);
-}
-
-.folder-open .about {
-  transform: translate(-50%, 0%);
-} */
-
 .folder-back {
   width: 800px;
   height: 500px;
-  /* margin: 5em auto 2em; */
   border-radius: 5px 25px 25px 25px;
   filter: drop-shadow(0 0 0.75rem grey);
   background: rgb(241, 213, 146);
@@ -74,7 +60,7 @@ body {
 .linkedin {
   border: 2px solid rgb(10, 102, 194);
   background-color: rgb(10, 102, 194);
-  top:24px;
+  top: 24px;
   border-radius: 12px;
   width: 85%;
   height: 50%;
@@ -83,19 +69,15 @@ body {
   display: block;
   justify-self: center;
   transition: all 0.1s ease-in;
-   /* Text */
+  cursor: pointer;
+
+  /* Text */
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: 400;
   font-size: large;
 }
-
-/* .linkedin,
-.github,
-.about {
-  margin-top: 30px; /* replace with your desired base + 30px per element */
- 
 
 .linkedin::before {
   text-align: center;
@@ -119,8 +101,9 @@ body {
   transform: translateY(-65px);
   position: absolute;
   transition: all 0.2s ease-out;
+
   /* Text */
-   padding-top: 30px;
+  padding-top: 30px;
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
@@ -128,14 +111,13 @@ body {
   font-size: large;
 }
 
-a{
-    color:inherit;
+a {
+  color: inherit;
 }
 
-
 .github {
-  border: 2px solid #0fbf3e;
-  background-color: #0fbf3e;
+  border: 2px solid #048c28;
+  background-color: #048c28;
   margin: 0 auto;
   display: block;
   justify-self: center;
@@ -145,7 +127,9 @@ a{
   height: 50%;
   position: absolute;
   transition: all 0.1s ease-in;
-    /* Text */
+  cursor: pointer;
+
+  /* Text */
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
@@ -155,20 +139,21 @@ a{
 
 .github::before {
   text-align: center;
-  
+
   position: absolute;
   top: -18px;
   left: 0px;
   width: 200px;
+      margin-left: 100px;
+
   height: 35px;
-  background: #0fbf3e;
+  background: #048c28;
   border-radius: 25px 0 0 0;
   clip-path: path("M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z");
   /* Text */
   content: "Skills";
- 
-} 
- 
+}
+
 .github-open {
   justify-self: center;
   border-radius: 12px;
@@ -178,20 +163,19 @@ a{
   position: absolute;
   transition: all 0.2s ease-out;
   grid: flex;
-  
-   /* Text */
-   padding-top: 30px;
+
+  /* Text */
+  padding-top: 30px;
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: 400;
   font-size: large;
-
 }
 
 .about {
-  border: 2px solid rgb(156, 14, 212);
-  background-color: rgb(156, 14, 212);
+  border: 2px solid rgb(255, 237, 76);
+  background-color: rgb(255, 237, 76);
   margin: 0 auto;
   display: block;
   justify-self: center;
@@ -201,7 +185,9 @@ a{
   height: 50%;
   position: absolute;
   transition: all 0.1s ease-in;
-    /* Text */
+  cursor: pointer;
+
+  /* Text */
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
@@ -214,14 +200,15 @@ a{
   position: absolute;
   top: -18px;
   right: 2px;
+  margin-right: 170px;
   width: 200px;
   height: 35px;
-  background: rgb(156, 14, 212);
+  background: rgb(255, 237, 76);
   border-radius: 25px 0 0 0;
   clip-path: path("M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z");
+
   /* Text */
   content: "Objective";
-
 }
 
 .about-open {
@@ -232,8 +219,9 @@ a{
   transform: translateY(-75px);
   position: absolute;
   transition: all 0.2s ease-out;
- /* Text */
-   padding-top: 30px;
+
+  /* Text */
+  padding-top: 30px;
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-style: normal;
@@ -242,6 +230,15 @@ a{
 }
 
 .name {
+  align-self: self-end;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+.desc {
+  align-self: self-start;
   font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: 400;
