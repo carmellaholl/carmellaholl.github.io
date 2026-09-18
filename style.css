@@ -1,3 +1,141 @@
-li{
-    color:aqua;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+    background: rgb(251, 251, 251);
+
+}
+
+.folder {
+  width: 800px;
+  height: 510px;
+  /* margin: 5em auto 2em; */
+
+  border-radius: 25px 25px 25px 25px;
+  filter: drop-shadow(0 0 0.75rem grey);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(241, 213, 146);
+  position: absolute;
+  transition: all 0.2s ease-in;
+
+}
+
+.folder-open {
+  background: rgb(241, 213, 146);
+  transform-origin: bottom center;
+  cursor: pointer;
+  transform: rotateX(-35deg) skew(1deg);
+
+  width: 800px;
+  height: 500px;
+  perspective: 850px;
+}
+
+.folder-back {
+  width: 800px;
+  height: 500px;
+  /* margin: 5em auto 2em; */
+  border-radius: 5px 25px 25px 25px;
+  filter: drop-shadow(0 0 0.75rem grey);
+  background: rgb(241, 213, 146);
+  position: absolute;
+}
+
+.folder-back::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 200px;
+  height: 35px;
+  background: rgb(241, 213, 146);
+  border-radius: 25px 0 0 0;
+  clip-path: path("M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z");
+}
+
+.linkedin {
+  border: 2px solid rgb(0, 255, 26);
+  background-color: rgb(242, 248, 242);
+  margin-top: 25px;
+  border-radius: 12px;
+  width: 85%;
+  height: 50%;
+  position: absolute;
+  margin: 0 auto;
+  display: block;
+  justify-self: center;
+    transition: all 0.1s ease-in ;
+
+}
+
+.linkedin-open {
+  margin: 0 auto;
+  justify-self: center;
+  border-radius: 12px;
+  width: 85%;
+  height: 50%;
+  transform: translateY(-65px);
+  position: absolute;
+      transition:  all 0.2s ease-out ;
+
+}
+
+.github {
+  border: 2px solid rgb(14, 202, 212);
+  background-color: rgb(242, 248, 242);
+  margin: 0 auto;
+  display: block;
+  justify-self: center;
+  margin-top: 30px;
+  border-radius: 12px;
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  transition: all 0.1s ease-in;
+}
+
+.github-open {
+  justify-self: center;
+  border-radius: 12px;
+  width: 90%;
+  height: 50%;
+  transform: translateY(-75px);
+  position: absolute;
+        transition:  all 0.2s ease-out ;
+
+}
+
+
+.about {
+  border: 2px solid rgb(156, 14, 212);
+  background-color: rgb(242, 248, 242);
+  margin: 0 auto;
+  display: block;
+  justify-self: center;
+  margin-top: 60px;
+  border-radius: 12px;
+  width: 95%;
+  height: 50%;
+  position: absolute;
+    transition: all 0.1s ease-in;
+
+}
+
+.about-open {
+  justify-self: center;
+  border-radius: 12px;
+  width: 95%;
+  height: 50%;
+  transform: translateY(-75px);
+  position: absolute;
+        transition:  all 0.2s ease-out ;
+
 }
