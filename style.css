@@ -112,7 +112,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: white;
 }
 
 .github {
@@ -169,6 +169,15 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: large;
+}
+
+.paraText{
+    white-space: pre;
+margin-top: 0px;
+}
+
+.link{
+
 }
 
 .about {
