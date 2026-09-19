@@ -1,44 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bhaiksuki&family=Roboto+Slab:wght@100..900&display=swap");
+:root {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #dce9fe;
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: rgb(242, 239, 255);
+  overflow: hidden; 
 }
-
 .folder {
   width: 880px;
   height: 561px;
   border-radius: 27.5px 27.5px 27.5px 27.5px;
-  filter: drop-shadow(0 0 0.825rem rgb(231, 227, 227));
+  filter: drop-shadow(0 0 0.225rem rgb(231, 227, 227));
   cursor: pointer;
-  align-items: center;
-  display: grid;
   text-align: center;
   background: rgb(241, 213, 146);
   position: absolute;
   transition: all 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 935px;
 }
 
 .folder-open {
   background: rgb(241, 213, 146);
   transform-origin: bottom center;
   cursor: pointer;
-  transform: rotateX(-40deg) skew(1deg);
-  width: 880px;
-  height: 550px;
-  perspective: 935px;
+  transform: rotateX(-42deg) skew(1deg);
 }
 
 .folder-back {
   width: 880px;
   height: 550px;
   border-radius: 5.5px 27.5px 27.5px 27.5px;
-  filter: drop-shadow(0 0 0.825rem rgb(254, 252, 252));
+  filter: drop-shadow(0 0 0.225rem #dce9fe);
   background: rgb(241, 213, 146);
   position: absolute;
 }
@@ -55,11 +61,10 @@ body {
 }
 
 .linkedin {
-  border: 2.2px solid rgb(10, 102, 194);
-  background-color: rgb(10, 102, 194);
-  top: 26.4px;
-  border-radius: 13.2px;
-  width: 85%;
+  border: 2.2px solid #FD8026;
+  top: 21px;
+  border-radius: 13.4px;
+  width: 82%;
   height: 50%;
   position: absolute;
   margin: 0 auto;
@@ -68,14 +73,13 @@ body {
   transition: all 0.1s ease-in;
   cursor: pointer;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: large;
 }
 
-.linkedin:hover {
-  transform: translateY(-8.8px);
+.linkedin, .linkedin::before{
+  background: #FD8026;
 }
 
 .linkedin::before {
@@ -85,10 +89,10 @@ body {
   right: 2.2px;
   width: 220px;
   height: 49.5px;
-  background: rgb(10, 102, 194);
   border-radius: 27.5px 0 0 0;
   clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
   content: "Connect";
+  text-indent: -12px;
 }
 
 .linkedin:hover {
@@ -103,69 +107,64 @@ body {
   margin: 0 auto;
   justify-self: center;
   border-radius: 13.2px;
-  width: 85%;
+  width: 82%;
   height: 50%;
   transform: translateY(-71.5px);
   position: absolute;
   transition: all 0.2s ease-out;
   padding-top: 33px;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: large;
 }
 
-a {
-  color: white;
-}
-
-.github {
-  border: 2.2px solid rgb(113, 195, 110);
-  background-color: rgb(113, 195, 110);
+.wEw {
+  border: 2.2px solid #71C36E;
   margin: 0 auto;
   display: block;
   justify-self: center;
-  margin-top: 63.8px;
-  border-radius: 13.2px;
-  width: 90%;
-  height: 50%;
+  margin-top: 46px;
+  border-radius: 13px;
+  width: 85%;
+  height: 40%;
   position: absolute;
   transition: all 0.1s ease-in;
   cursor: pointer;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: large;
 }
 
-.github:hover {
+.wEw:hover {
   transform: translateY(-8.8px);
 }
 
-.github.github-open:hover {
+.wEw.wEw-open:hover {
   transform: translateY(-82.5px);
 }
 
-.github::before {
+.wEw, .wEw::before{
+    background: #71C36E;
+}
+
+.wEw::before {
   text-align: center;
   position: absolute;
   top: -19.8px;
-  left: 0px;
+  right: 250px;
   width: 220px;
-  margin-left: 110px;
+  margin-right: 170px;
   height: 38.5px;
-  background: rgb(113, 195, 110);
   border-radius: 27.5px 0 0 0;
   clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
-  content: "Skills";
+  content: "Who Eats Whom";
+  text-indent: -17px;
 }
 
-.github-open {
+.wEw-open {
   justify-self: center;
   border-radius: 13.2px;
-  width: 90%;
+  width: 85%;
   height: 50%;
   transform: translateY(-82.5px);
   position: absolute;
@@ -173,8 +172,121 @@ a {
   grid: flex;
   padding-top: 33px;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
+  font-weight: 400;
+  font-size: large;
+}
+
+.sas {
+  border: 2.2px solid #006DCF;
+  background-color: #006DCF;
+  margin: 0 auto;
+  display: block;
+  justify-self: center;
+  margin-top: 71px;
+  border-radius: 13px;
+  width: 88%;
+  height: 40%;
+  position: absolute;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: large;
+  display: flex;
+}
+
+.sas:hover {
+  transform: translateY(-8.8px);
+}
+
+.sas.sas-open:hover {
+  transform: translateY(-82.5px);
+}
+
+.sas::before {
+  text-align: center;
+  position: absolute;
+  top: -19.8px;
+  right: 250px;
+  width: 220px;
+  margin-right: -150px;
+  height: 38.5px;
+  background: #006DCF;
+  border-radius: 27.5px 0 0 0;
+  clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
+  content: "SAS";
+  text-indent: -17px;
+}
+
+.sas-open {
+  justify-self: center;
+  border-radius: 13.2px;
+  width: 88%;
+  height: 50%;
+  transform: translateY(-82.5px);
+  position: absolute;
+  transition: all 0.2s ease-out;
+  grid: flex;
+  padding-top: 33px;
+  text-align: center;
+  font-weight: 400;
+  font-size: large;
+}
+
+.skills {
+  border: 2.2px solid #FFCC35;
+  margin: 0 auto;
+  display: block;
+  justify-self: center;
+  margin-top: 97px;
+  border-radius: 13.2px;
+  width: 92%;
+  height: 50%;
+  position: absolute;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: large;
+}
+
+.skills:hover {
+  transform: translateY(-8.8px);
+}
+
+.skills.skills-open:hover {
+  transform: translateY(-82.5px);
+}
+
+.skills, .skills::before{
+    background: #FFCC35;
+}
+
+.skills::before {
+  text-align: center;
+  position: absolute;
+  top: -19.8px;
+  left: -35px;
+  width: 210px;
+  margin-left: 110px;
+  height: 38.5px;
+  border-radius: 27.5px 0 0 0;
+  clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
+  content: "Skills";
+  text-indent: -17px;
+}
+
+.skills-open {
+  justify-self: center;
+  border-radius: 13.2px;
+  width: 92%;
+  height: 50%;
+  transform: translateY(-82.5px);
+  position: absolute;
+  transition: all 0.2s ease-out;
+  grid: flex;
+  padding-top: 33px;
+  text-align: center;
   font-weight: 400;
   font-size: large;
 }
@@ -186,21 +298,19 @@ a {
 }
 
 .about {
-  border: 2.2px solid rgb(255, 203, 55);
-  background-color: rgb(255, 203, 55);
+  border: 2.2px solid #D2C401;
   margin: 0 auto;
   display: block;
   justify-self: center;
-  margin-top: 99px;
+  margin-top: 123px;
   border-radius: 13.2px;
-  width: 95%;
+  width: 96%;
   height: 50%;
   position: absolute;
   transition: all 0.1s ease-in;
   cursor: pointer;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: large;
 }
@@ -213,18 +323,22 @@ a {
   transform: translateY(-82.5px);
 }
 
+.about, .about::before{
+      background: #D2C401;
+}
+
 .about::before {
   text-align: center;
   position: absolute;
   top: -19.8px;
   right: 2.2px;
-  margin-right: 187px;
+  margin-right: 207px;
   width: 220px;
   height: 38.5px;
-  background: rgb(255, 203, 55);
   border-radius: 27.5px 0 0 0;
   clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
   content: "Objective";
+  text-indent: -12px;
 }
 
 .about-open {
@@ -237,24 +351,51 @@ a {
   transition: all 0.2s ease-out;
   padding-top: 33px;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: large;
 }
 
 .name {
   align-self: center;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: xx-large;
 }
 
 .desc {
   align-self: self-start;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: xx-large;
+}
+
+a {
+  color: white;
+}
+
+.whoEatsText {
+  white-space: pre;
+  margin-top: -9px;
+  padding-left: 20px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.sasText {
+  white-space: pre;
+  margin-top: -9px;
+  padding-left: 20px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.projectBtn {
+  border: 5px green solid;
+  background-color: green;
+  border-radius: 10px;
+  width: 80px;
+  height: 10px;
+  float: right;
+  margin-right: 20px;
+  font-size: 5px;
 }

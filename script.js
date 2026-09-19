@@ -1,28 +1,39 @@
 const folder = document.querySelector(".folder");
-const skills = document.querySelector(".github");
+const skills = document.querySelector(".skills");
 const linkedin = document.querySelector(".linkedin");
 const objective = document.querySelector(".about");
+const whoEats = document.querySelector(".wEw");
+const sas = document.querySelector(".sas");
 
 folder.addEventListener("click", () => {
   folder.classList.toggle("folder-open");
   if (!folder.classList.contains("folder-open")) {
-    skills.classList.remove("github-open");
+    skills.classList.remove("skills-open");
     linkedin.classList.remove("linkedin-open");
     objective.classList.remove("about-open");
+    whoEats.classList.remove("wEw-open");
+    sas.classList.remove("sas-open");
 
     const sp = skills.querySelector("p");
     const lk = linkedin.querySelector("a");
     const op = objective.querySelector("p");
+    const wh = whoEats.querySelector("p");
+    const whA = whoEats.querySelector("a");
+    const sasP = sas.querySelector("p");
+
     if (sp) skills.removeChild(sp);
     if (lk) linkedin.removeChild(lk);
     if (op) objective.removeChild(op);
+    if (wh) whoEats.removeChild(wh);
+    if (whA) whoEats.removeChild(whA);
+    if (sasP) sas.removeChild(sasP);
   }
 });
 
 const skillsPara = document.createElement("p");
 
 skills.addEventListener("click", () => {
-  const isOpen = skills.classList.toggle("github-open");
+  const isOpen = skills.classList.toggle("skills-open");
   skillsPara.classList.add("paraText");
   skillsPara.textContent =
     "Languages: Java, C, Javascript, HTML / CSS \r\n Tools: JUnit, Jest, Git, REST API";
@@ -70,6 +81,53 @@ objective.addEventListener("click", () => {
     setTimeout(() => {
       if (objecPara.parentElement === objective) {
         objective.removeChild(objecPara);
+      }
+    }, 70);
+  }
+});
+
+const wEwPara = document.createElement("p");
+const weBtn = document.createElement("a");
+weBtn.classList.add("projectBtn");
+weBtn.setAttribute("href", "whw.html");
+weBtn.textContent = "Learn More Here";
+wEwPara.classList.add("whoEatsText");
+wEwPara.textContent =
+  "Transformed cluttered scientific data into \r\n intuitive, explorable visualizations to support ecological research.";
+
+whoEats.addEventListener("click", () => {
+  const isOpen = whoEats.classList.toggle("wEw-open");
+
+  if (isOpen) {
+    whoEats.appendChild(weBtn);
+    whoEats.appendChild(wEwPara);
+  } else {
+    setTimeout(() => {
+      if (wEwPara.parentElement === whoEats) {
+        if (wEwPara) whoEats.removeChild(wEwPara);
+    if (weBtn) whoEats.removeChild(weBtn);
+       
+      }
+    }, 70);
+  }
+});
+
+const sasPara = document.createElement("p");
+//const sasBtn = document.createElement("btn");
+
+sasPara.classList.add("sasText");
+sasPara.textContent =
+  "Improved reliability, accessibility, and global usability of a \r\nhealthcare analytics platform used for data-driven workflows.";
+
+sas.addEventListener("click", () => {
+  const isOpen = sas.classList.toggle("sas-open");
+
+  if (isOpen) {
+    sas.appendChild(sasPara);
+  } else {
+    setTimeout(() => {
+      if (sasPara.parentElement === sas) {
+        sas.removeChild(sasPara);
       }
     }, 70);
   }
