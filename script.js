@@ -25,7 +25,7 @@ skills.addEventListener("click", () => {
   const isOpen = skills.classList.toggle("github-open");
   skillsPara.classList.add("paraText");
   skillsPara.textContent =
-    "Languages: Java | C | Javascript | HTML / CSS \r\n Tools: JUnit | Jest | Git | REST API";
+    "Languages: Java, C, Javascript, HTML / CSS \r\n Tools: JUnit, Jest, Git, REST API";
 
   if (isOpen) {
     skills.appendChild(skillsPara);
