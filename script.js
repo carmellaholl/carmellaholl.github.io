@@ -23,14 +23,9 @@ const skillsPara = document.createElement("p");
 
 skills.addEventListener("click", () => {
   const isOpen = skills.classList.toggle("github-open");
-  /// attempting to fix skills text
-  // both attributes wont activate, only one at once
-  // depending on which is read first
-  // white-space allows for the values to go onto the next line
-  // but margin top ensures that the text isnt too low to read
- skillsPara.classList.add("paraText");
-  skillsPara.textContent = "Languages: Java | C | Javascript | HTML / CSS \r\n Tools: JUnit | Jest | Git | REST API";
- //   skillsPara.innerHTML = "Languages: Java | C | Javascript | HTML / CSS <br/> Tools: JUnit | Jest | Git | REST API";
+  skillsPara.classList.add("paraText");
+  skillsPara.textContent =
+    "Languages: Java | C | Javascript | HTML / CSS \r\n Tools: JUnit | Jest | Git | REST API";
 
   if (isOpen) {
     skills.appendChild(skillsPara);
@@ -43,14 +38,12 @@ skills.addEventListener("click", () => {
   }
 });
 
-
-
 const link = document.createElement("a");
- link.setAttribute("href", "https://www.linkedin.com/in/carmellaholloway/");
-  link.textContent = "Connect with me on Linkedin";
+link.setAttribute("href", "https://www.linkedin.com/in/carmellaholloway/");
+link.textContent = "Connect with me on Linkedin";
 
 linkedin.addEventListener("click", () => {
-const isOpen = linkedin.classList.toggle("linkedin-open");
+  const isOpen = linkedin.classList.toggle("linkedin-open");
 
   if (isOpen) {
     linkedin.appendChild(link);
@@ -61,15 +54,15 @@ const isOpen = linkedin.classList.toggle("linkedin-open");
       }
     }, 70);
   }
-
 });
 
 const objecPara = document.createElement("p");
- objecPara.classList.add("paraText");
-  objecPara.textContent = "Software developer focused on building impactful technology \r\n that solves real problems and improves people's lives.";
+objecPara.classList.add("paraText");
+objecPara.textContent =
+  "Software developer focused on building impactful technology \r\n that solves real problems and improves lives.";
 
 objective.addEventListener("click", () => {
- const isOpen = objective.classList.toggle("about-open");
+  const isOpen = objective.classList.toggle("about-open");
 
   if (isOpen) {
     objective.appendChild(objecPara);
