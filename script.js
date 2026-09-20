@@ -20,6 +20,7 @@ folder.addEventListener("click", () => {
     const wh = whoEats.querySelector("p");
     const whA = whoEats.querySelector("a");
     const sasP = sas.querySelector("p");
+    const sasA = sas.querySelector("a");
 
     if (sp) skills.removeChild(sp);
     if (lk) linkedin.removeChild(lk);
@@ -27,6 +28,7 @@ folder.addEventListener("click", () => {
     if (wh) whoEats.removeChild(wh);
     if (whA) whoEats.removeChild(whA);
     if (sasP) sas.removeChild(sasP);
+    if (sasA) sas.removeChild(sasA);
   }
 });
 
@@ -87,13 +89,14 @@ objective.addEventListener("click", () => {
 });
 
 const wEwPara = document.createElement("p");
-const weBtn = document.createElement("a");
-weBtn.classList.add("projectBtn");
-weBtn.setAttribute("href", "whw.html");
-weBtn.textContent = "Learn More Here";
 wEwPara.classList.add("whoEatsText");
 wEwPara.textContent =
-  "Transformed cluttered scientific data into \r\n intuitive, explorable visualizations to support ecological research.";
+  "Transformed cluttered scientific data into intuitive, explorable\r\nvisualizations to support ecological research.";
+
+const weBtn = document.createElement("a");
+weBtn.classList.add("whoEatsBtn");
+weBtn.setAttribute("href", "whw.html");
+weBtn.textContent = "Learn More";
 
 whoEats.addEventListener("click", () => {
   const isOpen = whoEats.classList.toggle("wEw-open");
@@ -105,29 +108,33 @@ whoEats.addEventListener("click", () => {
     setTimeout(() => {
       if (wEwPara.parentElement === whoEats) {
         if (wEwPara) whoEats.removeChild(wEwPara);
-    if (weBtn) whoEats.removeChild(weBtn);
-       
+        if (weBtn) whoEats.removeChild(weBtn);
       }
     }, 70);
   }
 });
 
 const sasPara = document.createElement("p");
-//const sasBtn = document.createElement("btn");
-
 sasPara.classList.add("sasText");
 sasPara.textContent =
-  "Improved reliability, accessibility, and global usability of a \r\nhealthcare analytics platform used for data-driven workflows.";
+  "Improved reliability, accessibility, and global usability of a healthcare\r\nanalytics platform used for data-driven workflows.";
+
+const sasBtn = document.createElement("a");
+sasBtn.classList.add("sasBtn");
+sasBtn.setAttribute("href", "whw.html");
+sasBtn.textContent = "Learn More";
 
 sas.addEventListener("click", () => {
   const isOpen = sas.classList.toggle("sas-open");
 
   if (isOpen) {
     sas.appendChild(sasPara);
+    sas.appendChild(sasBtn);
   } else {
     setTimeout(() => {
       if (sasPara.parentElement === sas) {
         sas.removeChild(sasPara);
+        if (sasBtn) sas.removeChild(sasBtn);
       }
     }, 70);
   }
