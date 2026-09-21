@@ -458,12 +458,13 @@ a {
   width: 800px;
   height: 75px;
   display: flex;
-  align-items: center;
+  align-items: center;        /* vertical centering */
+  justify-content: center;    /* horizontal centering - ADD THIS */
   line-height: 1.3;
   margin-top: 25px;
-
+  margin-right: 0px;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
   grid-column: 2;
   grid-row: 1;
   box-sizing: border-box;
@@ -473,7 +474,7 @@ a {
 .wEwSkills {
   grid-column: 3;
   /* /* grid-row: 1;  */
-  justify-self: center;
+  justify-self: right;
   font-size: 0.85rem;
   display: flex;
   box-sizing: border-box;
@@ -488,7 +489,33 @@ a {
   height: 70px;
   line-height: 1.3;
   margin-top: 25px;
+  margin-right:55px;
 }
+
+
+.back {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  font-size: 0.85rem;
+  display: flex;
+  box-sizing: border-box;
+  border: 5px #9bd6a5 solid;
+  box-shadow: 4px 4px #71c36e;
+  background-color: #9bd6a5;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;       /* vertical centering */
+  justify-content: center;   /* horizontal centering - ADD THIS */
+  width: 80px;
+  outline: inherit;
+  height: 75px;
+  line-height: 1.3;
+  margin-top: 25px;
+  margin-left: -320px;
+  text-decoration: none;
+}
+
 
 .containerDiv1 {
   grid-column: 1;
@@ -602,4 +629,8 @@ a {
 .sas-div-3 {
   border: 5px #006dcf solid;
   background-color: #006dcf;
+}
+
+.back{
+
 }
