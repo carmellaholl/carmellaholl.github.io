@@ -121,7 +121,7 @@ sasPara.textContent =
 
 const sasBtn = document.createElement("a");
 sasBtn.classList.add("sasBtn");
-sasBtn.setAttribute("href", "whw.html");
+sasBtn.setAttribute("href", "sas.html");
 sasBtn.textContent = "Learn More";
 
 sas.addEventListener("click", () => {
@@ -139,3 +139,8 @@ sas.addEventListener("click", () => {
     }, 70);
   }
 });
+
+
+//////// to do
+create a clickable before after function for the imagees 
+so that when clicked you see before hten after

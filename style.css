@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .folder {
   width: 880px;
@@ -31,7 +31,6 @@ body {
   justify-content: center;
   align-items: center;
   perspective: 935px;
-
 }
 
 .folder-open {
@@ -62,7 +61,7 @@ body {
 }
 
 .linkedin {
-  border: 2.2px solid #FD8026;
+  border: 2.2px solid #fd8026;
   top: 21px;
   border-radius: 13.4px;
   width: 82%;
@@ -79,8 +78,9 @@ body {
   font-size: large;
 }
 
-.linkedin, .linkedin::before{
-  background: #FD8026;
+.linkedin,
+.linkedin::before {
+  background: #fd8026;
 }
 
 .linkedin::before {
@@ -94,8 +94,7 @@ body {
   clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
   content: "Connect";
   text-indent: -12px;
-    font-size: 18px;
-
+  font-size: 18px;
 }
 
 .linkedin:hover {
@@ -122,7 +121,7 @@ body {
 }
 
 .wEw {
-  border: 2.2px solid #71C36E;
+  border: 2.2px solid #71c36e;
   margin: 0 auto;
   display: block;
   justify-self: center;
@@ -146,8 +145,9 @@ body {
   transform: translateY(-82.5px);
 }
 
-.wEw, .wEw::before{
-    background: #71C36E;
+.wEw,
+.wEw::before {
+  background: #71c36e;
 }
 
 .wEw::before {
@@ -163,7 +163,6 @@ body {
   content: "Who Eats Whom";
   text-indent: -17px;
   font-size: 18px;
-
 }
 
 .wEw-open {
@@ -182,8 +181,8 @@ body {
 }
 
 .sas {
-  border: 2.2px solid #006DCF;
-  background-color: #006DCF;
+  border: 2.2px solid #006dcf;
+  background-color: #006dcf;
   margin: 0 auto;
   display: block;
   justify-self: center;
@@ -216,13 +215,12 @@ body {
   width: 220px;
   margin-right: -150px;
   height: 38.5px;
-  background: #006DCF;
+  background: #006dcf;
   border-radius: 27.5px 0 0 0;
   clip-path: path("M 0 0 L 176 0 C 203.5 2.2, 192.5 17.6, 220 19.8 L 0 55 z");
   content: "SAS Internship";
   text-indent: -17px;
   font-size: 18px;
-
 }
 
 .sas-open {
@@ -241,7 +239,7 @@ body {
 }
 
 .skills {
-  border: 2.2px solid #FFCC35;
+  border: 2.2px solid #ffcc35;
   margin: 0 auto;
   display: block;
   justify-self: center;
@@ -265,8 +263,9 @@ body {
   transform: translateY(-82.5px);
 }
 
-.skills, .skills::before{
-    background: #FFCC35;
+.skills,
+.skills::before {
+  background: #ffcc35;
 }
 
 .skills::before {
@@ -306,7 +305,7 @@ body {
 }
 
 .about {
-  border: 2.2px solid #D2C401;
+  border: 2.2px solid #d2c401;
   margin: 0 auto;
   display: block;
   justify-self: center;
@@ -331,8 +330,9 @@ body {
   transform: translateY(-82.5px);
 }
 
-.about, .about::before{
-      background: #D2C401;
+.about,
+.about::before {
+  background: #d2c401;
 }
 
 .about::before {
@@ -415,7 +415,6 @@ a {
   align-items: center;
   text-align: center;
   font-size: 17px;
-
 }
 
 .sasBtn {
@@ -424,7 +423,7 @@ a {
   border-radius: 10px;
   width: 60px;
   height: 60px;
-  margin-left: 75px;    
+  margin-left: 75px;
   margin-top: -15px;
   margin-right: 5px;
   line-height: 1.6;
@@ -436,31 +435,132 @@ a {
   font-size: 17px;
 }
 
-.main{
-    display: grid;
-    grid-template-rows: repeat(1fr 1fr);
+/* Who eats whom */
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: 100px 500px 130px;
+
+  justify-content: center;
+  align-items: center;
+  background: #dce9fe;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* box-sizing: border-box; */
 }
-.containerDiv1{
-  border: 5px green solid;
-  background-color: green;
+
+.objectiveBox {
+  border: 5px #9bd6a5 solid;
+  box-shadow:  4px 4px  #71c36e;
+  background-color: #9bd6a5;
   border-radius: 10px;
-  width: 1200px;
-  height: 400px;
+  width: 800px;
+  height: 75px;
   display: flex;
+  align-items: center;
+  line-height: 1.3;
+  margin-top: 25px;
+
+  text-align: center;
+  justify-self: right;
+  grid-column:  2;
+  grid-row: 1;
+  box-sizing: border-box;
+  font-size: 0.95rem;
 }
 
-.containerDiv2{
-  border: 5px green solid;
-  background-color: green;
-  border-radius: 10px;
-  width: 1200px;
-  height: 400px;
+
+.wEwSkills{
+     grid-column: 3;
+  /* /* grid-row: 1;  */
+  justify-self: center;
+  font-size: 0.85rem;
+  display: flex;
+  box-sizing: border-box;
+   border: 5px #9bd6a5 solid;
+  box-shadow:  4px 4px  #71c36e;
+  background-color: #9bd6a5;
+    border-radius: 10px;
+  text-align: center;
+  align-items: center;
+
+  width: 200px;
+  height: 70px;
+  line-height: 1.3;
+  margin-top: 25px;
 }
 
-.containerDiv3{
-  border: 5px green solid;
-  background-color: green;
+.containerDiv1 {
+  grid-column: 1;
+  grid-row: 2;
+
+}
+.containerDiv2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.containerDiv3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.containerDiv1,
+.containerDiv2,
+.containerDiv3 {
+  border: 5px #fed968 solid;
+  background-color: #fed968;
   border-radius: 10px;
-  width: 1200px;
+  width: 450px;
   height: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  align-self: center;
+  margin-top: 5px;
+  line-height: 2;
+    margin-left: 20px;
+        overflow: hidden;
+
+
+}
+
+  /* tellow #fed968; */
+/* blue #006dcf */
+/* green 9bd6a5 */
+.containerDiv1Text,
+.containerDiv2Text,
+.containerDiv3Text {
+  border: 5px #9bd6a5 solid;
+  background-color: #9bd6a5;
+  border-radius: 10px;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  align-self: self-start;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+
+  justify-self: center;
+}
+
+.containerDiv1Text {
+  grid-column: 1;
+  grid-row: 3;
+}
+.containerDiv2Text {
+  grid-column: 2;
+  grid-row: 3;
+}
+.containerDiv3Text {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+img {
+  border-radius: 10px;
+  width: 96%;
+  height: 96%;
 }
