@@ -140,7 +140,3 @@ sas.addEventListener("click", () => {
   }
 });
 
-
-//////// to do
-create a clickable before after function for the imagees 
-so that when clicked you see before hten after
