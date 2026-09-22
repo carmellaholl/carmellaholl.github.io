@@ -72,7 +72,7 @@ linkedin.addEventListener("click", () => {
 const objecPara = document.createElement("p");
 objecPara.classList.add("paraText");
 objecPara.textContent =
-  "Software developer focused on building impactful technology \r\n that solves real problems and improves lives.";
+  "Undergraduate Computer Science senior focused on building impactful technology \r\n that solves real problems and improves lives.";
 
 objective.addEventListener("click", () => {
   const isOpen = objective.classList.toggle("about-open");

@@ -450,7 +450,8 @@ a {
   /* box-sizing: border-box; */
 }
 
-.objectiveBox {
+.objectiveBox,
+.sasObj {
   border: 5px #9bd6a5 solid;
   box-shadow: 4px 4px #71c36e;
   background-color: #9bd6a5;
@@ -468,10 +469,17 @@ a {
   grid-column: 2;
   grid-row: 1;
   box-sizing: border-box;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
-.wEwSkills {
+.sasObj{
+border: 5px #006dcf solid;
+  box-shadow: 4px 4px #024580;
+  background-color: #006dcf;
+}
+
+.wEwSkills,
+.sasSkills {
   grid-column: 3;
   /* /* grid-row: 1;  */
   justify-self: right;
@@ -492,8 +500,14 @@ a {
   margin-right:55px;
 }
 
+.sasSkills{
+border: 5px #006dcf solid;
+  box-shadow: 4px 4px #024580;
+  background-color: #006dcf;
+}
 
-.back {
+.back,
+.back-sas {
   grid-column: 1;
   grid-row: 1;
   justify-self: center;
@@ -516,6 +530,18 @@ a {
     transition: background-color 0.3s ease, border 0.3s ease;
 
   text-decoration: none;
+}
+
+.back-sas{
+border: 5px #006dcf solid;
+  box-shadow: 4px 4px #024580;
+  background-color: #006dcf;
+}
+
+.back-sas:hover{
+    background-color: #024580;
+  border:  #024580 ;
+
 }
 
 .back:hover{
@@ -636,8 +662,10 @@ a {
 .sas-div-3 {
   border: 5px #006dcf solid;
   background-color: #006dcf;
-}
-
-.back{
-
+  box-shadow:
+    -3px 4px 1px #024580,
+    1px 1px #024580;
+  height: 480px;
+  margin-top: 80px;
+  grid-row:  2;
 }
