@@ -396,6 +396,7 @@ a {
   padding-left: 20px;
   line-height: 1.8;
   text-align: left;
+  
 }
 
 .whoEatsBtn {
@@ -473,9 +474,11 @@ a {
 }
 
 .sasObj{
-border: 5px #006dcf solid;
+border: 5px #127edc solid;
   box-shadow: 4px 4px #024580;
-  background-color: #006dcf;
+  background-color: #127edc;
+  font-size: 1rem;
+
 }
 
 .wEwSkills,
@@ -501,9 +504,9 @@ border: 5px #006dcf solid;
 }
 
 .sasSkills{
-border: 5px #006dcf solid;
+border: 5px #127edc solid;
   box-shadow: 4px 4px #024580;
-  background-color: #006dcf;
+  background-color: #127edc;
 }
 
 .back,
@@ -533,9 +536,9 @@ border: 5px #006dcf solid;
 }
 
 .back-sas{
-border: 5px #006dcf solid;
+border: 5px #127edc solid;
   box-shadow: 4px 4px #024580;
-  background-color: #006dcf;
+  background-color: #127edc;
 }
 
 .back-sas:hover{
@@ -660,8 +663,8 @@ border: 5px #006dcf solid;
 .sas-div-1,
 .sas-div-2,
 .sas-div-3 {
-  border: 5px #006dcf solid;
-  background-color: #006dcf;
+  border: 5px #127edc solid;
+  background-color: #127edc;
   box-shadow:
     -3px 4px 1px #024580,
     1px 1px #024580;
