@@ -531,3 +531,15 @@ a {
   margin-top: 80px;
   grid-row: 2;
 }
+
+.construction-block{
+    border: 5px #2c8fe6 solid;
+  background-color: #2c8fe6;
+  box-shadow:
+    -3px 4px 1px #024580,
+    1px 1px #024580;
+  height: 480px;
+  margin-top: 80px;
+  grid-row: 2;
+  grid-column: 2;
+}
